@@ -1,16 +1,13 @@
 import Head from "next/head";
 
-export default function about(){
-  return(
+export default function about() {
+  return (
     <div>
-       <Head>
-          <title>
-            aboutページ
-          </title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-    <div>かきくけこ</div>
+      <Head>
+        <title>aboutページ</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div>かきくけこ</div>
     </div>
-   
-  )
+  );
 }
