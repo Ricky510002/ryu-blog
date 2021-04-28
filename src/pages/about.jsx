@@ -5,7 +5,7 @@ export default function about(){
     <div>
        <Head>
           <title>
-            reactの練習
+            aboutページ
           </title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
