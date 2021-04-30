@@ -7,7 +7,7 @@ export default function about() {
         <title>aboutページ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>さしすせそ</div>
+      <div>あ</div>
     </div>
   );
 }
