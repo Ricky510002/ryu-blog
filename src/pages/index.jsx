@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>reactの練習</title>
+        <title>a</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
