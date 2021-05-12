@@ -1,12 +1,12 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/home.module.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>p</title>
+        <title>RyuBlog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -15,8 +15,15 @@ export default function Home() {
           ようこそ <a href="https://nextjs.org">Ryu blog!</a>
         </h1>
       </main>
+      
       <Link href="/about">
         <a>aboutページ</a>
+      </Link>
+      <Link href="/contact">
+        <a>contactページ</a>
+      </Link>
+      <Link href="/travel">
+        <a>travelページ</a>
       </Link>
 
       <footer className={styles.footer}>
