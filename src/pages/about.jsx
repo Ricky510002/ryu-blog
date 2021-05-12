@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "../styles/about.module.css";
 
 export default function about() {
   return (
@@ -7,7 +8,7 @@ export default function about() {
         <title>aboutページ</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>７</div>
+      <div className={styles.about}>aboutページです</div>
     </div>
   );
 }
