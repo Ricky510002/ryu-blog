@@ -15,10 +15,24 @@ export default function Home() {
       <Header/>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        {/* <h1 className={styles.title}>
           ようこそ <a href="https://nextjs.org">Ryu blog!</a>
-        </h1>
+        </h1> */}
       </main>
+
+      <div className={styles.gridContainer}>
+        <div className={styles.gridItemA}>
+          <div class={styles.l_wrapper_06}>
+            <div class={styles.card_06}>
+              <img class={styles.card_img_06} src="https://dubdesign.net/wp-content/uploads/2020/05/0508_dtplayouteyecatch.jpg" alt=""></img>
+              <div class={styles.card_content_06}>
+                <p class={styles.card_title_06}>DUB DESiGN</p>
+                <p class={styles.card_text_06}>WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。<br></br>しっかりきっかり更新中。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <Link href="/about">
         <a>aboutページ</a>
