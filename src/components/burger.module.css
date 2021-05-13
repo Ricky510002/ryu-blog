@@ -1,0 +1,114 @@
+.burger{
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 20;
+  display: none;
+}
+
+.line1_a{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transform: rotate(45deg);
+  transition: all 0.3s linear;
+}
+.line1_b{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: rgba(9, 133, 250, 0.837);
+  border-radius: 10px;
+  transform: rotate(0);
+  transition: all 0.3s linear;
+}
+
+.line2_a{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.line2_b{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: rgb(13, 148, 130);
+  border-radius: 10px;
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+.line3_a{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: white;
+  border-radius: 10px;
+  transform-origin: 1px;
+  transform: rotate(-45deg);
+  transition: all 0.3s linear;
+}
+.line3_b{
+  width: 2rem;
+  height: 0.25rem;
+  background-color: black;
+  border-radius: 10px;
+  transform: rotate(0);
+  transition: all 0.3s linear;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.li {
+  padding: 18px 10px;
+}
+
+@media (max-width: 768px) {
+  .rightNav {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    padding-top: 3.5rem;
+    
+  }
+  .rightNav_open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 40vh;
+    background-color: rgba(0, 0, 0, 0.767);
+    padding-top: 3.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .li {
+    color: white;
+  }
+
+  .burger{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+}
