@@ -1,5 +1,6 @@
 import styles from "./burger.module.css";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Burger() {
   const [open, setOpen] = useState(false);
@@ -27,19 +28,35 @@ export default function Burger() {
       {open ? (
         <div className={styles.rightNav_open}>
           <ul className={styles.ul}>
-            <li className={styles.li}>Home</li>
-            <li className={styles.li}>About</li>
-            <li className={styles.li}>Contact</li>
-            <li className={styles.li}>Travel</li>
+            <Link href="/">
+              <li className={styles.li}>Home</li>
+            </Link>
+            <Link href="/about">
+              <li className={styles.li}>About</li>
+            </Link>
+            <Link href="/contact">
+              <li className={styles.li}>Contact</li>
+            </Link>
+            <Link href="/travel">
+              <li className={styles.li}>Travel</li>
+            </Link>
           </ul>
         </div>
         ) : (
         <div className={styles.rightNav}>
           <ul className={styles.ul}>
-            <li className={styles.li}>Home</li>
-            <li className={styles.li}>About</li>
-            <li className={styles.li}>Contact</li>
-            <li className={styles.li}>Travel</li>
+            <Link href="/">
+              <li className={styles.li}>Home</li>
+            </Link>
+            <Link href="/about">
+              <li className={styles.li}>About</li>
+            </Link>
+            <Link href="/contact">
+              <li className={styles.li}>Contact</li>
+            </Link>
+            <Link href="/travel">
+              <li className={styles.li}>Travel</li>
+            </Link>   
           </ul>
         </div>
         )}
