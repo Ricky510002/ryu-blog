@@ -1,4 +1,4 @@
-.burger{
+.burger {
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -11,7 +11,7 @@
   display: none;
 }
 
-.line1_a{
+.line1_a {
   width: 2rem;
   height: 0.25rem;
   background-color: white;
@@ -20,16 +20,16 @@
   transform: rotate(45deg);
   transition: all 0.3s linear;
 }
-.line1_b{
+.line1_b {
   width: 2rem;
   height: 0.25rem;
-  background-color: rgba(9, 133, 250, 0.837);
+  background-color: #bfdbf7;
   border-radius: 10px;
   transform: rotate(0);
   transition: all 0.3s linear;
 }
 
-.line2_a{
+.line2_a {
   width: 2rem;
   height: 0.25rem;
   background-color: white;
@@ -39,16 +39,16 @@
   opacity: 0;
   transition: all 0.3s linear;
 }
-.line2_b{
+.line2_b {
   width: 2rem;
   height: 0.25rem;
-  background-color: rgb(13, 148, 130);
+  background-color: #1f7a8c;
   border-radius: 10px;
   transform: translateX(0);
   opacity: 1;
   transition: all 0.3s linear;
 }
-.line3_a{
+.line3_a {
   width: 2rem;
   height: 0.25rem;
   background-color: white;
@@ -57,10 +57,10 @@
   transform: rotate(-45deg);
   transition: all 0.3s linear;
 }
-.line3_b{
+.line3_b {
   width: 2rem;
   height: 0.25rem;
-  background-color: black;
+  background-color: #022b3a;
   border-radius: 10px;
   transform: rotate(0);
   transition: all 0.3s linear;
@@ -73,8 +73,9 @@
 }
 .li {
   padding: 18px 10px;
+  font-family: "Comic Sans MS";
 }
-.li:hover{
+.li:hover {
   cursor: pointer;
 }
 
@@ -88,7 +89,6 @@
     width: 20vh;
     background-color: rgba(0, 0, 0, 0.767);
     padding-top: 3.5rem;
-    
   }
   .rightNav_open {
     position: fixed;
@@ -99,6 +99,7 @@
     background-color: rgba(0, 0, 0, 0.767);
     padding-top: 3.5rem;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
   }
   .ul {
     list-style: none;
@@ -107,12 +108,13 @@
   }
   .li {
     color: white;
+    font-family: "Comic Sans MS";
   }
-  .li:hover{
+  .li:hover {
     cursor: pointer;
   }
 
-  .burger{
+  .burger {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
