@@ -1,0 +1,58 @@
+.background {
+  min-height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../public/IMG_7381.jpg");
+  /* background-image: url("https://source.unsplash.com/random"); */
+}
+.text {
+  font-family: 'Comic Sans MS';
+  font-size: 80px;
+  opacity: 0.7;
+  position: absolute;
+  color: white;
+  top: 40%;
+  left: 20%;
+  animation: poyoyon 2.5s infinite;
+}
+@keyframes poyoyon {
+  0%, 40% {
+    transform: skew(0deg, 0deg);
+  }
+  5% {
+    transform: skew(5deg, 5deg);
+  }
+  10% {
+    transform: skew(-4deg, -4deg);
+  }
+  15% {
+    transform: skew(3deg, 3deg);
+  }
+  20% {
+    transform: skew(-2deg, -2deg);
+  }
+  25% {
+    transform: skew(1deg, 1deg);
+  }
+  30% {
+    transform: skew(-0.6deg, -0.6deg);
+  }
+  35% {
+    transform: skew(0.3deg, 0.3deg);
+  }
+}
+
+@media (max-width:768px){
+  .text {
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    opacity: 0.8;
+    position: absolute;
+    color: #ffffff;
+    top: 40%;
+    left: 10%;
+    animation: poyoyon 2.5s infinite;
+  }
+}
