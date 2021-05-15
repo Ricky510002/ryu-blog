@@ -32,7 +32,7 @@ export default function Burger() {
               <li className={styles.li}>Home</li>
             </Link>
             <Link href="/about">
-              <li className={styles.li}>About</li>
+              <li className={styles.li}>AboutMe</li>
             </Link>
             <Link href="/contact">
               <li className={styles.li}>Contact</li>
@@ -49,7 +49,7 @@ export default function Burger() {
               <li className={styles.li}>Home</li>
             </Link>
             <Link href="/about">
-              <li className={styles.li}>About</li>
+              <li className={styles.li}>AboutMe</li>
             </Link>
             <Link href="/contact">
               <li className={styles.li}>Contact</li>
