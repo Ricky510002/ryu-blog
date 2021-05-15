@@ -4,7 +4,7 @@ export default function Background(props){
   return(
     <>
     <div className={styles.background}>
-      <div className={styles.text}>Ryu Blog</div>
+      <div className={styles.text}>{props.title}</div>
     </div>
     </>
   );
