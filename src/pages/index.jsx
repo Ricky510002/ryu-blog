@@ -2,49 +2,66 @@ import Head from "next/head";
 import styles from "../styles/home.module.css";
 import Link from "next/link";
 
-import Header from "../components/header"
+import Header from "../components/header";
+import Background from "../components/background";
+import Scroll from "../components/scroll";
+import { Pagination } from '../components/Pagination';
 
-export default function Home() {
+
+export default function Home({ blog,totalCount }) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>RyuBlog</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      
-      <Header/>
+    <>
+      <div className={styles.container}>
+        <Head>
+          <title>RyuBlog</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main className={styles.main}>
-        {/* <h1 className={styles.title}>
-          ようこそ <a href="https://nextjs.org">Ryu blog!</a>
-        </h1> */}
-      </main>
+        <Header />
+        <Background title="Ryu Blog"/>
 
-      <div className={styles.gridContainer}>
-        <div className={styles.gridItemA}>
-          <div class={styles.l_wrapper_06}>
-            <div class={styles.card_06}>
-              <img class={styles.card_img_06} src="https://dubdesign.net/wp-content/uploads/2020/05/0508_dtplayouteyecatch.jpg" alt=""></img>
-              <div class={styles.card_content_06}>
-                <p class={styles.card_title_06}>DUB DESiGN</p>
-                <p class={styles.card_text_06}>WebデザインやWebサイト制作、最新のWeb業界情報などを紹介していくサイト。<br></br>しっかりきっかり更新中。</p>
+        <Scroll />
+
+        <div className={styles.Episodes}>Episodes</div>
+
+        <div className={styles.gridContainer}>
+          {blog.map((blog) => (
+            <Link href={`blog/${blog.id}`} key={blog.id}>
+              <div className={styles.gridItem}>
+                <div className={styles.l_wrapper_06}>
+                  <div className={styles.card_06}>
+                    <img
+                      className={styles.card_img_06}
+                      src={blog.img.url}
+                      alt="ブログのサムネイル"
+                    ></img>
+                    <div className={styles.card_content_06}>
+                      <p className={styles.card_title_06}>{blog.title}</p>
+                      <p className={styles.card_text_06}>{blog.body}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </Link>
+          ))}
         </div>
+          <Pagination totalCount={totalCount} />
       </div>
-      
-      <Link href="/about">
-        <a>aboutページ</a>
-      </Link>
-      <Link href="/contact">
-        <a>contactページ</a>
-      </Link>
-      <Link href="/travel">
-        <a>travelページ</a>
-      </Link>
-
-      
-    </div>
+    </>
   );
 }
+
+export const getStaticProps = async () => {
+  const key = {
+    headers: { "X-API-KEY": process.env.API_KEY },
+  };
+  const data = await fetch("https://ryu-blog.microcms.io/api/v1/blog?offset=0&limit=6", key)
+    .then((res) => res.json())
+    .catch(() => null);
+  return {
+    props: {
+      blog: data.contents,
+      totalCount: data.totalCount
+    },
+  };
+};
