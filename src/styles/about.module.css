@@ -1,45 +1,57 @@
 .bg {
-  min-height: 50vh;
+  height: 60vh;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  /* background-image: url("../../public/IMG_7381.jpg"); */
   background-image: url("https://source.unsplash.com/random");
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text {
   font-family: "Comic Sans MS";
-  font-size: 80px;
-  text-align: center;
+  font-size: 3.5rem;
+  color: #fff;
+  /* text-align: center; */
+  /* margin-top: 50px; */
 }
 
 .container {
   width: 100%;
-  /* height: 60vh; */
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+.containerBook {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .card {
   background-color: #f3f3f3;
-  /* width: 60%;
-  height: 50vh; */
-  margin: 5rem 0 5rem 10rem;
+  margin: 5rem 10rem;
   grid-column-start: 1 / 2;
+}
+.cardBook1 {
+  background-color: #f3f3f3;
+  margin: 5rem 0.5rem 5rem 5rem;
+  grid-column-start: 1 / 2;
+}
+.cardBook2 {
+  background-color: #f3f3f3;
+  margin: 5rem 5rem 5rem 0.5rem;
+  grid-column-start: 2 / 3;
 }
 .img {
   grid-column-start: 2 / 3;
-  
   margin: 5rem 0.5rem;
-  width: 23vw;
-  height: 450px;
+  width: 25vw;
+  /* height: 100%; */
 }
 .imgBookMatch {
-  grid-column-start: 2 / 3;
-  margin: 5rem 0.5rem;
-  width: 23vw;
-  height: 450px;
-  border-radius: 20%;
-  /* background-image: url("../../public/Bookmatch.jpg"); */
+  width: 500px;
+  height: 300px;
+  border-radius: 2%;
 }
 .h1 {
   font-family: "ヒラギノ明朝 ProN W3";
@@ -58,6 +70,73 @@
   margin-top: 0.8em;
 }
 
+/* タブレットサイズ横長 */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .containerBook {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    background-color: #f3f3f3;
+    margin: 3rem 4rem;
+  }
+  .cardBook1 {
+    background-color: #f3f3f3;
+    margin: 5rem 3rem 0 3rem;
+  }
+  .cardBook2 {
+    background-color: #f3f3f3;
+    margin: 0  3rem 5rem 3rem;
+  }
+  .img {
+    margin: 2rem 4rem;
+    width: 85vw;
+  }
+  .imgBookMatch {
+    width: 50vw;
+  }
+}
+/* タブレットサイズ縦長 */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .containerBook {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    background-color: #f3f3f3;
+    margin: 3rem 4rem;
+  }
+  .cardBook1 {
+    background-color: #f3f3f3;
+    margin: 5rem 3rem 0 3rem;
+  }
+  .cardBook2 {
+    background-color: #f3f3f3;
+    margin: 0  3rem 5rem 3rem;
+  }
+  .img {
+    margin: 2rem 4rem;
+    width: 85vw;
+  }
+  .imgBookMatch {
+    width: 80vw;
+  }
+}
+
 /* スマホサイズ */
 @media (max-width: 480px) {
   .container {
@@ -67,42 +146,29 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .card {
-    background-color: #f3f3f3;
-    /* width: 60%;
-    height: 50vh; */
-    margin: 2rem;
-    /* grid-column-start: 1 / 4; */
-  }
-  .img {
-    margin: 2rem;
-    width: 85vw;
-  }
-  .imgBookMatch {
-    margin: 0 2rem;
-    width: 85vw;
-  }
-}
-
-/* タブレットサイズ */
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .container {
+  .containerBook {
     width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
   .card {
     background-color: #f3f3f3;
-    margin: 3rem 5rem;
+    margin: 2rem 2rem 0 2rem;
+  }
+  .cardBook1 {
+    background-color: #f3f3f3;
+    margin: 5rem 3rem 0 3rem;
+  }
+  .cardBook2 {
+    background-color: #f3f3f3;
+    margin: 0  3rem 5rem 3rem;
   }
   .img {
-    margin: 3rem 5rem;
+    margin: 2rem;
     width: 85vw;
   }
   .imgBookMatch {
-    margin: 3rem 5rem;
-    width: 85vw;
+    width: 75vw;
+    height: 200px;
   }
 }
