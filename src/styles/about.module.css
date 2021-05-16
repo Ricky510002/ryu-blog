@@ -1,3 +1,108 @@
-.about{
-  background-color: aqua;
+.bg {
+  min-height: 50vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* background-image: url("../../public/IMG_7381.jpg"); */
+  background-image: url("https://source.unsplash.com/random");
+}
+.text {
+  font-family: "Comic Sans MS";
+  font-size: 80px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  /* height: 60vh; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.card {
+  background-color: #f3f3f3;
+  /* width: 60%;
+  height: 50vh; */
+  margin: 5rem 0 5rem 10rem;
+  grid-column-start: 1 / 2;
+}
+.img {
+  grid-column-start: 2 / 3;
+  
+  margin: 5rem 0.5rem;
+  width: 23vw;
+  height: 450px;
+}
+.imgBookMatch {
+  grid-column-start: 2 / 3;
+  margin: 5rem 0.5rem;
+  width: 23vw;
+  height: 450px;
+  border-radius: 20%;
+  /* background-image: url("../../public/Bookmatch.jpg"); */
+}
+.h1 {
+  font-family: "ヒラギノ明朝 ProN W3";
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.28em;
+  line-height: 1;
+  font-family: "ヒラギノ明朝 ProN W3";
+}
+.span {
+  color: #b4b4b4;
+  font-size: 10px;
+  display: block;
+  margin-top: 0.8em;
+}
+
+/* スマホサイズ */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card {
+    background-color: #f3f3f3;
+    /* width: 60%;
+    height: 50vh; */
+    margin: 2rem;
+    /* grid-column-start: 1 / 4; */
+  }
+  .img {
+    margin: 2rem;
+    width: 85vw;
+  }
+  .imgBookMatch {
+    margin: 0 2rem;
+    width: 85vw;
+  }
+}
+
+/* タブレットサイズ */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .card {
+    background-color: #f3f3f3;
+    margin: 3rem 5rem;
+  }
+  .img {
+    margin: 3rem 5rem;
+    width: 85vw;
+  }
+  .imgBookMatch {
+    margin: 3rem 5rem;
+    width: 85vw;
+  }
 }
