@@ -22,7 +22,7 @@ export default function about() {
             後藤瑠希<span className={styles.span}>Goto Ryuki</span>
           </p>
           <p>
-            2000年/埼玉県出身
+            20歳/埼玉県出身
             <br />
             東京理科大学 経営学部
             <br />
