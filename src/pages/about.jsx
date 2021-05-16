@@ -4,9 +4,6 @@ import Header from "../components/header";
 import Background from "../components/background";
 import Scroll from "../components/scroll";
 
-
-
-
 export default function about() {
   return (
     <>
@@ -63,19 +60,28 @@ export default function about() {
       <div className={styles.bg}>
         <div className={styles.text}>Portfolio</div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.card}>
+      <div className={styles.containerBook}>
+        <div className={styles.cardBook1}>
           <h1 className={styles.h1}>Book Match</h1>
+          <img
+            src="/Bookmatch.jpg"
+            alt="ポートフォリオのサムネイル"
+            className={styles.imgBookMatch}
+          />
+        </div>
+        <div className={styles.cardBook2}>
           <p>
             BookMatchとは大学で使わなくなった教科書を売りたい人と大学の高い教科書を少しでも安く買いたい人を結びつけるサイトです。
             <br />
             ターゲットを大学生にすることで他のフリマアプリなどと差別化をして大学生に使いやすいアプリとなっております。
-            <br /><br />
+            <br />
+            <br />
             [ Why ]<br />
-            このアプリを作った理由
+            このサービスを作った理由
             <br />
             大学生の時に大学の教科書の値段が高い、講義が終わると買った教科書がいらなくなり捨ててしまう、講義を受ける前に少しでもその教科書のことや教授のことが知りたいという問題があると思い、それらの問題を少しでも解決できるようにこのアプリを作りました。
-            <br /><br />
+            <br />
+            <br />
             [ BookMatchの主な機能 ]<br />
             新規登録・ログイン機能
             <br />
@@ -84,28 +90,32 @@ export default function about() {
             メッセージ機能
             <br />
             決済機能(Stripe)
-            <br /><br />
+            <br />
+            <br />
             [使用技術] <br />
             PHP 7.4, Laravel 6.20.9, Docker, MySQL 5.7, Vue.js, Vuetify,
             Bootstrap, Stripe <br />
           </p>
         </div>
-        <img
-          src="/Bookmatch.jpg"
-          alt=""
-          className={styles.imgBookMatch}
-        />
-        
       </div>
 
       <div className={styles.bg}>
-        <div className={styles.text}>About Ryu Blog</div>
+        <div className={styles.text}>About <br /> Ryu Blog</div>
       </div>
-      <div className={styles.container}>
-        <div className={styles.card}>
+      <div className={styles.containerBook}>
+        <div className={styles.cardBook1}>
           <h1 className={styles.h1}>Ryu Blog</h1>
-
+          <img
+            src="/Bookmatch.jpg"
+            alt="ブログのサムネイル"
+            className={styles.imgBookMatch}
+          />
+        </div>
+        <div className={styles.cardBook2}>
           <p>
+            Next.js、Reactを使って何か作ってみたくてこのブログを作りました。
+            <br />
+            <br />
             [ 使用技術 ]<br />
             言語・・・JavaScript
             <br />
@@ -117,11 +127,6 @@ export default function about() {
             <br />
           </p>
         </div>
-        {/* <img
-          src="https://source.unsplash.com/random"
-          alt=""
-          className={styles.img}
-        /> */}
       </div>
     </>
   );
