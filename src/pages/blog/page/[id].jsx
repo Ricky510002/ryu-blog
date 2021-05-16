@@ -29,6 +29,7 @@ export default function BlogPageId({ blog, totalCount }) {
 
         <div className={styles.gridContainer}>
           {blog.map((blog) => (
+            <div >
             <Link href={`blog/${blog.id}`} key={blog.id}>
               <div className={styles.gridItem}>
                 <div className={styles.l_wrapper_06}>
@@ -46,6 +47,7 @@ export default function BlogPageId({ blog, totalCount }) {
                 </div>
               </div>
             </Link>
+            </div>
           ))}
         </div>
           <Pagination totalCount={totalCount} />
