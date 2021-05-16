@@ -37,7 +37,7 @@ export default function Home({ blog,totalCount }) {
                     ></img>
                     <div className={styles.card_content_06}>
                       <p className={styles.card_title_06}>{blog.title}</p>
-                      <p className={styles.card_text_06}>{blog.body}</p>
+                      <p className={styles.card_text_06}>{blog.body1}</p>
                     </div>
                   </div>
                 </div>
