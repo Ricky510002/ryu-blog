@@ -5,10 +5,9 @@ import Link from "next/link";
 import Header from "../components/header";
 import Background from "../components/background";
 import Scroll from "../components/scroll";
-import { Pagination } from '../components/Pagination';
+import { Pagination } from "../components/Pagination";
 
-
-export default function Home({ blog,totalCount }) {
+export default function Home({ blog, totalCount }) {
   return (
     <>
       <div className={styles.container}>
@@ -18,7 +17,7 @@ export default function Home({ blog,totalCount }) {
         </Head>
 
         <Header />
-        <Background title="Ryu Blog"/>
+        <Background title="Ryu Blog" />
 
         <Scroll />
 
@@ -37,7 +36,12 @@ export default function Home({ blog,totalCount }) {
                     ></img>
                     <div className={styles.card_content_06}>
                       <p className={styles.card_title_06}>{blog.title}</p>
-                      <p className={styles.card_text_06}>{blog.body1}</p>
+                      <div
+                        className={styles.card_text_06}
+                        dangerouslySetInnerHTML={{
+                          __html: `${blog.body1}`,
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -45,7 +49,7 @@ export default function Home({ blog,totalCount }) {
             </Link>
           ))}
         </div>
-          <Pagination totalCount={totalCount} />
+        <Pagination totalCount={totalCount} />
       </div>
     </>
   );
@@ -55,13 +59,16 @@ export const getStaticProps = async () => {
   const key = {
     headers: { "X-API-KEY": process.env.API_KEY },
   };
-  const data = await fetch("https://ryu-blog.microcms.io/api/v1/blog?offset=0&limit=6", key)
+  const data = await fetch(
+    "https://ryu-blog.microcms.io/api/v1/blog?offset=0&limit=6",
+    key
+  )
     .then((res) => res.json())
     .catch(() => null);
   return {
     props: {
       blog: data.contents,
-      totalCount: data.totalCount
+      totalCount: data.totalCount,
     },
   };
 };
