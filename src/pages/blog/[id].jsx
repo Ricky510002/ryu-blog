@@ -8,6 +8,7 @@ import Scroll from "../../components/scroll";
 // import { FabFaGithub } from "@fortawesome/free-solid-svg-icons";
 
 export default function BlogId({ blog }) {
+  console.log(blog);
   return (
     <>
       <Head>
@@ -26,37 +27,21 @@ export default function BlogId({ blog }) {
           <img src={blog.img.url} alt="" className={styles.thumbnail} />
           <div className={styles.tableOfContents}>
             <h3>目次</h3>
-            <p>{blog.content}</p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `${blog.content}`,
+              }}
+            />
           </div>
           <div className={styles.box}>
             <h3>{blog.head1}</h3>
           </div>
           <div className={styles.body}>
-            <p>
-             {blog.body1}
-            </p>
-          </div>
-          <div className={styles.box}>
-            <h3>ここに文章</h3>
-          </div>
-          <div className={styles.body}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              tempore architecto recusandae, similique, ea rem voluptatibus
-              minima beatae corrupti officia cumque illum amet quis temporibus
-              quo consequatur assumenda maiores. Voluptate.
-            </p>
-          </div>
-          <div className={styles.box}>
-            <h3>ここに文章</h3>
-          </div>
-          <div className={styles.body}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              tempore architecto recusandae, similique, ea rem voluptatibus
-              minima beatae corrupti officia cumque illum amet quis temporibus
-              quo consequatur assumenda maiores. Voluptate.
-            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `${blog.body1}`,
+              }}
+            />
           </div>
         </div>
         <div className={styles.profile}>
