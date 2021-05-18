@@ -1,3 +1,6 @@
-.about{
-  background-color: pink;
+.title{
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  font-size: 3em;
+  margin-top: 50px;
 }
