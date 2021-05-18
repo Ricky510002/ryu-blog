@@ -3,12 +3,12 @@ import Link from "next/link";
 import styles from "../../styles/blog.module.css";
 import Header from "../../components/header";
 import Background from "../../components/background";
+import Burger from "../../components/burger";
 import Scroll from "../../components/scroll";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { FabFaGithub } from "@fortawesome/free-solid-svg-icons";
 
 export default function BlogId({ blog }) {
-  console.log(blog);
   return (
     <>
       <Head>
@@ -16,11 +16,16 @@ export default function BlogId({ blog }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Background title="Ryu Blog" />
+      <div className={styles.nav}>
+        <div className={styles.logo}>LOGO</div>
+        <Burger />
+      </div>
+
+      {/* <Header /> */}
+      {/* <Background title="Ryu Blog" /> */}
 
       <Scroll />
-      <div className={styles.blog}>Blog</div>
+      <div className={styles.blog}>Ryu Blog</div>
       <div className={styles.grid}>
         <div className={styles.card}>
           <h1 className={styles.h1}>{blog.title}</h1>
