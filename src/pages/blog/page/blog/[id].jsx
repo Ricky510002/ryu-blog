@@ -1,7 +1,8 @@
 import Head from "next/head";
-import styles from "../../../../styles/blog.module.css"
+import styles from "../../../../styles/blog.module.css";
 import Header from "../../../../components/header";
 import Background from "../../../../components/background";
+import Burger from "../../../../components/burger";
 import Scroll from "../../../../components/scroll";
 
 export default function BlogId({ blog }) {
@@ -12,11 +13,16 @@ export default function BlogId({ blog }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Background title="Ryu Blog" />
+      <div className={styles.nav}>
+        <div className={styles.logo}>LOGO</div>
+        <Burger />
+      </div>
+
+      {/* <Header />
+      <Background title="Ryu Blog" /> */}
 
       <Scroll />
-      <div className={styles.blog}>Blog</div>
+      <div className={styles.blog}>Ryu Blog</div>
       <div className={styles.grid}>
         <div className={styles.card}>
           <h1 className={styles.h1}>{blog.title}</h1>
@@ -57,6 +63,7 @@ export default function BlogId({ blog }) {
             <br />
           </div>
         </div>
+        {/* <FontAwesomeIcon icon={FabFaGithub} size="lg" color="#fff" /> */}
       </div>
     </>
   );
