@@ -1,0 +1,351 @@
+/* basics */
+.body {
+  background: #f3f3f3;
+  padding: 0 10%;
+  font: 100%/1.5 "Kalam";
+}
+
+.h1 {
+  margin: 80px 0 50px 0;
+  line-height: 1;
+  padding: 10px;
+  color: #251b19;
+  font-family: "Comic Sans MS";
+}
+
+.p {
+  margin: 0;
+  padding: 10px;
+  color: #251b19;
+  font-size: 1.2em;
+}
+
+/* the grid */
+.grid1 {
+  display: grid;
+  width: 100%;
+  max-width: 770px;
+  margin: 10% auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 200px 200px auto 200px 200px 200px auto 200px 200px auto;
+  grid-gap: 25px;
+}
+
+/* panels */
+.panel {
+  color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0px 0px 5px #251b19;
+}
+
+/* Japan画像 */
+.panelTitle {
+  box-shadow: none;
+}
+.panel1_1 {
+  background-image: url(../../public/IMG_2411.jpg);
+}
+.panel1_2 {
+  background-image: url(../../public/IMG_0750.jpg);
+}
+.panel1_3 {
+  background-image: url(../../public/IMG_8221.jpg);
+}
+.panel1_4 {
+  background-image: url(../../public/IMG_8658.jpg);
+}
+.panel1_5 {
+  background-image: url(../../public/IMG_5779.jpg);
+}
+.panel1_6 {
+  background-image: url(../../public/IMG_8058.jpg);
+}
+.panel1_7 {
+  background-image: url(../../public/IMG_7821.jpg);
+}
+.panel1_8 {
+  background-image: url(../../public/IMG_1239.jpg);
+}
+.panel1_9 {
+  background-image: url(../../public/IMG_3935.jpg);
+}
+
+/* UK画像 */
+.panel2_1 {
+  background-image: url(../../public/IMG_7722.jpg);
+}
+.panel2_2 {
+  background-image: url(../../public/IMG_7644.jpg);
+}
+.panel2_3 {
+  background-image: url(../../public/IMG_7879.jpg);
+}
+.panel2_4 {
+  background-image: url(../../public/IMG_7910.jpg);
+}
+.panel2_5 {
+  background-image: url(../../public/IMG_7835.jpg);
+}
+.panel2_6 {
+  background-image: url(../../public/IMG_7699.jpg);
+}
+.panel2_7 {
+  background-image: url(../../public/IMG_7790.jpg);
+}
+.panel2_8 {
+  background-image: url(../../public/IMG_7938.jpg);
+}
+.panel2_9 {
+  background-image: url(../../public/IMG_7809.jpg);
+}
+
+/* France画像 */
+.panel3_1 {
+  background-image: url(../../public/IMG_7368.jpg);
+}
+.panel3_2 {
+  background-image: url(../../public/IMG_7418.jpg);
+}
+.panel3_3 {
+  background-image: url(../../public/IMG_7283.jpg);
+}
+.panel3_4 {
+  background-image: url(../../public/IMG_7342.jpg);
+}
+.panel3_5 {
+  background-image: url(../../public/IMG_7491.JPG);
+}
+.panel3_6 {
+  background-image: url(../../public/IMG_7325.jpg);
+}
+.panel3_7 {
+  background-image: url(../../public/IMG_7451.jpg);
+}
+.panel3_8 {
+  background-image: url(../../public/IMG_7569.jpg);
+}
+.panel3_9 {
+  background-image: url(../../public/IMG_7388.jpg);
+}
+
+/* Germany画像 */
+.panel4_1 {
+  background-image: url(../../public/IMG_7045.jpg);
+}
+.panel4_2 {
+  background-image: url(../../public/IMG_7188.jpg);
+}
+.panel4_3 {
+  background-image: url(../../public/IMG_7023.jpg);
+}
+.panel4_4 {
+  background-image: url(../../public/IMG_7035.jpg);
+}
+.panel4_5 {
+  background-image: url(../../public/IMG_7128.jpg);
+}
+.panel4_6 {
+  background-image: url(../../public/IMG_7142.jpg);
+}
+.panel4_7 {
+  background-image: url(../../public/IMG_7169.jpg);
+}
+.panel4_8 {
+  background-image: url(../../public/IMG_7048.jpg);
+}
+.panel4_9 {
+  background-image: url(../../public/IMG_7031.jpg);
+}
+
+/* Serbia画像 */
+.panel5_1 {
+  background-image: url(../../public/IMG_6790.jpg);
+}
+.panel5_2 {
+  background-image: url(../../public/IMG_6953.jpg);
+}
+.panel5_3 {
+  background-image: url(../../public/IMG_6931.jpg);
+}
+.panel5_4 {
+  background-image: url(../../public/IMG_6775.jpg);
+}
+.panel5_5 {
+  background-image: url(../../public/IMG_6767.jpg);
+}
+.panel5_6 {
+  background-image: url(../../public/IMG_6907.jpg);
+}
+.panel5_7 {
+  background-image: url(../../public/IMG_6935.jpg);
+}
+.panel5_8 {
+  background-image: url(../../public/IMG_6949.jpg);
+}
+.panel5_9 {
+  background-image: url(../../public/IMG_6920.jpg);
+}
+
+/* Philippines画像 */
+.panel6_1 {
+  background-image: url(../../public/IMG_9022.jpg);
+}
+.panel6_2 {
+  background-image: url(../../public/IMG_9021.jpg);
+}
+.panel6_3 {
+  background-image: url(../../public/IMG_9028.jpg);
+}
+.panel6_4 {
+  background-image: url(../../public/IMG_9024.jpg);
+}
+.panel6_5 {
+  background-image: url(../../public/IMG_9023.jpg);
+}
+.panel6_6 {
+  background-image: url(../../public/IMG_6447.jpg);
+}
+.panel6_7 {
+  background-image: url(../../public/IMG_9025.jpg);
+}
+.panel6_8 {
+  background-image: url(../../public/IMG_9019.jpg);
+}
+.panel6_9 {
+  background-image: url(../../public/IMG_9020.jpg);
+}
+
+/* media query 1 */
+@media only screen and (min-width: 400px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 200px auto 200px 200px auto 200px auto;
+  }
+  /* 新しく追加したら下に３個ずつ追加する。 */
+  .panelTitle,
+  .panel1_3,
+  .panel1_6,
+  .panel1_7,
+  .panel2_3,
+  .panel2_6,
+  .panel2_7,
+  .panel3_3,
+  .panel3_6,
+  .panel3_7,
+  .panel4_3,
+  .panel4_6,
+  .panel4_7,
+  .panel5_3,
+  .panel5_6,
+  .panel5_7,
+  .panel6_3,
+  .panel6_6,
+  .panel6_7,
+  .panelCopyright {
+    grid-column: span 2;
+  }
+  .panelCopyright {
+    text-align: right;
+  }
+  .panel1_7,
+  .panel2_7,
+  .panel3_7,
+  .panel4_7,
+  .panel5_7,
+  .panel6_7{
+    text-align: center;
+  }
+  .h1 {
+    font-size: 3em;
+  }
+}
+
+/* media query 2 */
+@media only screen and (min-width: 600px) {
+  .grid1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 200px 200px 200px auto;
+  }
+  .panelTitle,
+  .panelCopyright {
+    grid-column: span 3;
+  }
+  .panel1_3,
+  .panel1_6,
+  .panel2_3,
+  .panel2_6,
+  .panel3_3,
+  .panel3_6,
+  .panel4_3,
+  .panel4_6,
+  .panel5_3,
+  .panel5_6,
+  .panel6_3,
+  .panel6_6 {
+    grid-column: auto;
+  }
+  .panel1_8,
+  .panel2_8,
+  .panel3_8,
+  .panel4_8,
+  .panel5_8,
+  .panel6_8 {
+    grid-column: span 2;
+  }
+  .h1 {
+    font-size: 3.5em;
+  }
+  .p {
+    font-size: 1.3em;
+  }
+
+  /* flexbox centering */
+  .panel1_3,
+  .panel2_3,
+  .panel3_3,
+  .panel4_3,
+  .panel5_3,
+  .panel6_3 {
+    display: flex;
+    align-items: center;
+  }
+
+  /* layering */
+  .panel1_7,
+  .panel2_7,
+  .panel3_7,
+  .panel4_7,
+  .panel5_7,
+  .panel6_7 {
+    grid-column: 1;
+    grid-row: 4;
+    z-index: 1;
+    margin: -5px 0 0 -10px;
+    transform: rotate(-2deg);
+  }
+
+  .panel1_7 .p,
+  .panel2_7 .p,
+  .panel3_7 .p,
+  .panel4_7 .p,
+  .panel5_7 .p,
+  .panel6_7 .p {
+    background: #f8f7f2;
+    box-shadow: 0 0px 0px 5px #251b19;
+    text-align: left;
+  }
+
+  .panel1_8,
+  .panel2_8,
+  .panel3_8,
+  .panel4_8,
+  .panel5_8,
+  .panel6_8 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    background-size: 70%;
+    background-position: right;
+  }
+}
