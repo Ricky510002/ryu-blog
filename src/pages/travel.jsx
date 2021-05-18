@@ -3,6 +3,7 @@ import styles from "../styles/travel.module.css";
 import Header from "../components/header"
 import Background from "../components/background"
 import Scroll from "../components/scroll"
+import Grid from "../components/Grid"
 
 
 export default function travel() {
@@ -16,8 +17,10 @@ export default function travel() {
 
       <Background title="Travel"/>
       <Scroll />
+      <div className={styles.title}>Photos</div>
+
+      <Grid/>
       
-      <div className={styles.about}>travelページです</div>
     </>
   );
 }
