@@ -7,8 +7,6 @@ import Header from "../../../components/header";
 import Background from "../../../components/background";
 import Scroll from "../../../components/scroll";
 
-
-
 const PER_PAGE = 5;
 
 export default function BlogPageId({ blog, totalCount }) {
@@ -29,7 +27,6 @@ export default function BlogPageId({ blog, totalCount }) {
 
         <div className={styles.gridContainer}>
           {blog.map((blog) => (
-            <div >
             <Link href={`blog/${blog.id}`} key={blog.id}>
               <div className={styles.gridItem}>
                 <div className={styles.l_wrapper_06}>
@@ -41,16 +38,20 @@ export default function BlogPageId({ blog, totalCount }) {
                     ></img>
                     <div className={styles.card_content_06}>
                       <p className={styles.card_title_06}>{blog.title}</p>
-                      <p className={styles.card_text_06}>{blog.body}</p>
+                      <div
+                        className={styles.card_text_06}
+                        dangerouslySetInnerHTML={{
+                          __html: `${blog.body1}`,
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </Link>
-            </div>
           ))}
         </div>
-          <Pagination totalCount={totalCount} />
+        <Pagination totalCount={totalCount} />
       </div>
     </>
   );
