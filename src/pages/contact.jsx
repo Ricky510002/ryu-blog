@@ -4,7 +4,9 @@ import Header from "../components/header"
 import Background from "../components/background"
 import Scroll from "../components/scroll"
 
-export default function about() {
+
+export default function contact() {
+  
   return (
     <>
       <Head>
@@ -16,6 +18,8 @@ export default function about() {
       <Scroll/>
     
       <div className={styles.about}>contactページです</div>
+
+    
     </>
   );
 }
