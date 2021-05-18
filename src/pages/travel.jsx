@@ -5,7 +5,7 @@ import Background from "../components/background"
 import Scroll from "../components/scroll"
 
 
-export default function about() {
+export default function travel() {
   return (
     <>
       <Head>
