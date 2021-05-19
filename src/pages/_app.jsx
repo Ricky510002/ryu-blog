@@ -1,12 +1,12 @@
 import "../styles/globals.css";
-import { AnimateSharedLayout } from "framer-motion";
+
+import * as gtag from '~/src/lib/gtag'
+import usePageView from '~/src/hooks/usePageView'
+
 
 function MyApp({ Component, pageProps }) {
-  return (
-    // <AnimateSharedLayout>
-      <Component {...pageProps} />
-    // </AnimateSharedLayout>
-  );
+  usePageView()
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;
