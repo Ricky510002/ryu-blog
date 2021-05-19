@@ -17,7 +17,11 @@ export default function BlogId({ blog }) {
       </Head>
 
       <div className={styles.nav}>
-        <div className={styles.logo}>LOGO</div>
+         <Link href="/">
+          <div className={styles.logo}>
+            Ryu Blog
+          </div>
+        </Link>
         <Burger />
       </div>
 

@@ -35,8 +35,8 @@ export default function Home({ blog, totalCount }) {
                       alt="ブログのサムネイル"
                     ></img>
                     <div className={styles.card_content_06}>
-                      <p className={styles.card_title_06}>{blog.title}</p>
                       <p className={styles.category}>{blog.category && `${blog.category.name}`}</p>
+                      <p className={styles.card_title_06}>{blog.title}</p>
                       <div
                         className={styles.card_text_06}
                         dangerouslySetInnerHTML={{

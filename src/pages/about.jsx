@@ -51,13 +51,13 @@ export default function about() {
           </p>
         </div>
         <img
-          src="https://source.unsplash.com/random"
+          src="/5FB5DA4D-06A4-45EF-8E01-01195B97DACF-removebg-preview.png"
           alt=""
           className={styles.img}
         />
       </div>
 
-      <div className={styles.bg}>
+      <div className={styles.bg1}>
         <div className={styles.text}>Portfolio</div>
       </div>
       <div className={styles.containerBook}>
@@ -71,7 +71,7 @@ export default function about() {
         </div>
         <div className={styles.cardBook2}>
           <p>
-            BookMatchとは大学で使わなくなった教科書を売りたい人と大学の高い教科書を少しでも安く買いたい人を結びつけるサイトです。
+            BookMatchとは大学で使わなくなった教科書を売りたい人と大学の高い教科書を少しでも安く買いたい人を結びつけるサービスです。
             <br />
             ターゲットを大学生にすることで他のフリマアプリなどと差別化をして大学生に使いやすいサービスとなっております。
             <br />
@@ -99,20 +99,20 @@ export default function about() {
         </div>
       </div>
 
-      <div className={styles.bg}>
+      <div className={styles.bg2}>
         <div className={styles.text}>About <br /> Ryu Blog</div>
       </div>
       <div className={styles.containerBook}>
         <div className={styles.cardBook1}>
           <h1 className={styles.h1}>Ryu Blog</h1>
           <img
-            src="/Bookmatch.jpg"
+            src="/スクリーンショット 2021-05-19 12.25.28.png"
             alt="ブログのサムネイル"
             className={styles.imgBookMatch}
           />
         </div>
         <div className={styles.cardBook2}>
-          <p>
+          <p className={styles.ryublogContents}>
             Next.js、Reactを使って何か作ってみたくてこのブログを作りました。
             <br />
             <br />
