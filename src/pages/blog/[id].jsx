@@ -17,9 +17,9 @@ export default function BlogId({ blog }) {
       </Head>
 
       <div className={styles.nav}>
-         <Link href="/">
+        <Link href="/">
           <div className={styles.logo}>
-            Ryu Blog
+            <img src="../logo.png" alt="LOGO" className={styles.img}/>
           </div>
         </Link>
         <Burger />

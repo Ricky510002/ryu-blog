@@ -11,7 +11,7 @@ export default function Header(){
       <div className={styles.nav}>
         <Link href="/">
           <div className={styles.logo}>
-            <img src="150511 (1).png" alt="ロゴ" className={styles.img}/>
+            <img src="/logo.png" alt="LOGO" className={styles.img}/>
           </div>
         </Link>
         
