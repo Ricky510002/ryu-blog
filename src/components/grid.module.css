@@ -25,7 +25,7 @@
   display: grid;
   width: 100%;
   max-width: 770px;
-  margin: 10% auto;
+  margin: 10% auto 0 auto;
   grid-template-columns: 1fr;
   grid-template-rows: auto 200px 200px auto 200px 200px 200px auto 200px 200px auto;
   grid-gap: 25px;
