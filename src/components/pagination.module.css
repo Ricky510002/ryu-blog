@@ -24,13 +24,12 @@
   font-weight: bold;
   background: #333;
   padding: 18px 30px;
-  margin: 0 5px;
+  margin: 0 5px 100px 5px;
   border-radius: 50%;
   position: relative;
   z-index: 1;
   display: inline-block;
   transition: .3s;
-
 }
 .a::before {
   content: "";

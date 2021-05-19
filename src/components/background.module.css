@@ -1,10 +1,16 @@
 .background {
+  margin-top: 100vh;
+}
+.backgroundWrapper::before{
   min-height: 100vh;
   width: 100%;
-  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:-1;
+  content: "";
   background-size: cover;
   background-position: center;
-  /* background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg"); */
   background-image: url("../../public/IMG_7381.jpg");
 }
 .text {
@@ -48,7 +54,6 @@
   .backgroundWrapper:before{
     min-height: 100vh;
     width: 100%;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -58,15 +63,9 @@
     background-position: center;
     background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg");
   }
-  /* .background { */
-    /* min-height: 100vh; */
-    /* width: 100%; */
-    /* background-attachment: fixed; */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg"); */
-    /* background-image: url("../../public/IMG_7381.jpg"); */
-  /* } */
+  .background {
+    margin-top: 100vh;
+  }
   .text {
     font-family: 'Comic Sans MS';
     font-size: 30px;
