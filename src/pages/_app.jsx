@@ -1,7 +1,6 @@
 import "../styles/globals.css";
 
-import * as gtag from '~/src/lib/gtag'
-import usePageView from '~/src/hooks/usePageView'
+import usePageView from '../hooks/usePageView'
 
 
 function MyApp({ Component, pageProps }) {
