@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Pagination } from "../../../components/Pagination";
 import Head from "next/head";
-import styles from "../../../styles/home.module.css";
+import styles from "../../../styles/Home.module.css";
 import Header from "../../../components/header";
 import Background from "../../../components/background";
 import Scroll from "../../../components/scroll";
