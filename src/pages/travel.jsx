@@ -10,7 +10,7 @@ export default function travel() {
   return (
     <>
       <Head>
-        <title>travelページ</title>
+        <title>Ryu blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>

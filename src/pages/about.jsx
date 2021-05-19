@@ -8,7 +8,7 @@ export default function about() {
   return (
     <>
       <Head>
-        <title>aboutページ</title>
+        <title>Ryublog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -17,7 +17,7 @@ export default function about() {
       <Scroll />
       <div className={styles.container}>
         <div className={styles.card}>
-          <h1 className={styles.h1}>Self Introduction</h1>
+          <h1 className={styles.h1}>Profile</h1>
           <p className={styles.name}>
             後藤瑠希<span className={styles.span}>Goto Ryuki</span>
           </p>

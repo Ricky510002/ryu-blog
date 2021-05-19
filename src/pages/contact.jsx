@@ -58,7 +58,7 @@ const Contact = () => {
   return (
     <>
       <Head>
-        <title>contactページ</title>
+        <title>Ryu blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
