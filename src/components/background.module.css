@@ -51,7 +51,7 @@
 }
 
 @media (max-width:768px){
-  .backgroundWrapper:before{
+  .backgroundWrapper::before{
     min-height: 100vh;
     width: 100%;
     position: fixed;
@@ -62,9 +62,6 @@
     background-size: cover;
     background-position: center;
     background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg");
-  }
-  .background {
-    margin-top: 100vh;
   }
   .text {
     font-family: 'Comic Sans MS';
