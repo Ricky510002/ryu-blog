@@ -4,8 +4,8 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  /* background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg"); */
   background-image: url("../../public/IMG_7381.jpg");
-  /* background-image: url("https://source.unsplash.com/random"); */
 }
 .text {
   font-family: 'Comic Sans MS';
@@ -45,6 +45,15 @@
 }
 
 @media (max-width:768px){
+  .background {
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg");
+    /* background-image: url("../../public/IMG_7381.jpg"); */
+  }
   .text {
     font-family: 'Comic Sans MS';
     font-size: 30px;

@@ -1,10 +1,21 @@
-.bg {
-  height: 60vh;
+.bg1{
+  height: 80vh;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url("https://source.unsplash.com/random");
+  background-image: url("../../public/0195697A-3C4E-416C-8D22-D0FA69202259.JPG");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg2{
+  height: 80vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../public/45D29359-D92B-4C8E-9A90-B7A1CCBF8414.JPG");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +55,7 @@
 }
 .img {
   grid-column-start: 2 / 3;
-  margin: 5rem 0.5rem;
+  margin: 15rem 0.5rem 5rem 0.5rem;
   width: 25vw;
   /* height: 100%; */
 }
@@ -68,6 +79,9 @@
   font-size: 10px;
   display: block;
   margin-top: 0.8em;
+}
+.ryublogContents{
+  margin-top: 100px;
 }
 
 /* タブレットサイズ横長 */
@@ -144,7 +158,7 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 300px;
   }
   .containerBook {
     width: 100%;
@@ -164,7 +178,7 @@
     margin: 0  3rem 5rem 3rem;
   }
   .img {
-    margin: 2rem;
+    margin: 0 2rem;
     width: 85vw;
   }
   .imgBookMatch {

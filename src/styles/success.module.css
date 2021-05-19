@@ -1,0 +1,36 @@
+.send{
+  text-align: center;
+  font-family: 'Comic Sans MS';
+  font-size: 3em;
+  margin-top: 300px;
+  background-color: #393D3F;
+  color: aliceblue;
+}
+/* タブレットサイズ横長 */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .send{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    margin-top: 300px;
+  }
+}
+/* タブレットサイズ縦長 */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .send{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    margin-top: 300px;
+  }
+}
+
+/* スマホサイズ */
+@media(max-width: 480px) {
+  .send{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    margin-top: 300px;
+  }
+}

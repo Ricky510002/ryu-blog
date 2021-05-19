@@ -42,7 +42,7 @@
 }
 .card_content_06 {
   padding: 0 10px 10px;
-  height: 150px;
+  height: 180px;
 }
 .card_title_06 {
   font-family: 'ヒラギノ明朝 ProN W3';
@@ -64,21 +64,6 @@
 .card_content_06 p {
   margin-bottom:0;
 }
-
-/* .category{
-	display: inline-block;
-  margin: 2px;
-	padding: 0.2rem;
-	line-height: 1;
-	text-decoration: none;
-	color: #0000ee;
-	background-color: #fff;
-	border: 1px solid #0000ee;
-	border-radius: 2em;
-} */
-/* .category:before {
-	content: "#";	
-} */
 .category {
 	position: relative;
 	display: inline-block;
@@ -88,6 +73,7 @@
 	color: #fff;
 	text-decoration: none;
 	background-color: #546A7B;
+  font-family: 'Comic Sans MS';
 }
 .category:before {
 	position: absolute;
@@ -98,23 +84,68 @@
 	border-style: solid;
 	border-color: transparent #546A7B transparent transparent;
 }
-/* .category:after {
-	position: absolute;
-	top: center;
-	left: 0;
-	content: '●';
-	color: #fff;
-} */
-
-
-
-
 
 .Episodes{
   text-align: center;
   font-family: 'Comic Sans MS';
   font-size: 3em;
   margin-top: 50px;
+}
+/* タブレットサイズ横長 */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .gridContainer{
+    display: grid;
+    margin: 50px 100px;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridItem{
+    margin: 10px 10%;
+  }
+  .card_img_06 {
+    border-radius: 2px 2px 0 0;
+    width: 100%;
+    height: 180px;
+  }
+  .card_content_06 {
+    padding: 8px 20px 20px;
+    height: 180px;
+  }
+  .Episodes{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    margin-top: 50px;
+  }
+}
+/* タブレットサイズ縦長 */
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .gridContainer{
+    display: grid;
+    margin: 50px 20px;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gridItem{
+    margin: 10px 10%;
+  }
+  .card_img_06 {
+    border-radius: 2px 2px 0 0;
+    width: 100%;
+    height: 180px;
+  }
+  .card_content_06 {
+    padding: 8px 20px 20px;
+    height: 200px;
+  }
+  .Episodes{
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2em;
+    margin-top: 50px;
+  }
 }
 
 /* スマホサイズ */
@@ -138,7 +169,7 @@
   }
   .card_content_06 {
     padding: 8px 20px 20px;
-    height: 150px;
+    height: 180px;
   }
   .Episodes{
     text-align: center;
@@ -147,32 +178,3 @@
     margin-top: 50px;
   }
 }
-/* タブレットサイズ */
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .gridContainer{
-    display: grid;
-    margin: 50px 20px;
-    min-height: 100vh;
-    /* grid-template-rows: 1fr; */
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gridItem{
-    margin: 10px 10%;
-  }
-  .card_img_06 {
-    border-radius: 2px 2px 0 0;
-    width: 100%;
-    height: 180px;
-  }
-  .card_content_06 {
-    padding: 8px 20px 20px;
-    height: 150px;
-  }
-  .Episodes{
-    text-align: center;
-    font-family: 'Comic Sans MS';
-    font-size: 2em;
-    margin-top: 50px;
-  }
- }
