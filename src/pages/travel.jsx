@@ -3,7 +3,7 @@ import styles from "../styles/travel.module.css";
 import Header from "../components/header"
 import Background from "../components/background"
 import Scroll from "../components/scroll"
-import Grid from "../components/Grid"
+import Grid from "../components/grid"
 
 
 export default function travel() {
