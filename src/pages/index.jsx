@@ -5,7 +5,7 @@ import Link from "next/link";
 import Header from "../components/header";
 import Background from "../components/background";
 import Scroll from "../components/scroll";
-import { Pagination } from "../components/Pagination";
+import { Pagination } from "../components/pagination";
 
 export default function Home({ blog, totalCount }) {
   return (

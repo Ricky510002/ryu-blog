@@ -1,6 +1,6 @@
 // pages/blog/page/[id].js
 import Link from "next/link";
-import { Pagination } from "../../../components/Pagination";
+import { Pagination } from "../../../components/pagination";
 import Head from "next/head";
 import styles from "../../../styles/Home.module.css";
 import Header from "../../../components/header";
