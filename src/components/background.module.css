@@ -45,10 +45,16 @@
 }
 
 @media (max-width:768px){
+  .backgroundWrapper::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-1;
+  }
   .background {
-    min-height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
+    /* min-height: 100vh; */
+    /* width: 100%; */
+    /* background-attachment: fixed; */
     background-size: cover;
     background-position: center;
     background-image: url("../../public/ED359E4D-FE06-4A95-B844-277CAE22C606.jpg");
