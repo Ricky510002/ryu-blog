@@ -56,11 +56,11 @@ export default function about() {
           className={styles.img}
         />
       </div>
-      
+
       <div className={styles.bg1}>
         <div className={styles.text}>Portfolio</div>
       </div>
-    
+
       <div className={styles.containerBook}>
         <div className={styles.cardBook1}>
           <h1 className={styles.h1}>Book Match</h1>
@@ -99,9 +99,11 @@ export default function about() {
           </p>
         </div>
       </div>
-      
+
       <div className={styles.bg2}>
-        <div className={styles.text}>About <br /> Ryu Blog</div>
+        <div className={styles.text}>
+          About <br /> Ryu Blog
+        </div>
       </div>
 
       <div className={styles.containerBook}>

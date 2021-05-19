@@ -1,7 +1,12 @@
 .background {
-  margin-top: 100vh;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../../public/IMG_7381.jpg");
 }
-.backgroundWrapper::before{
+/* .backgroundWrapper::before{
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -9,10 +14,8 @@
   left: 0;
   z-index:-1;
   content: "";
-  background-size: cover;
-  background-position: center;
-  background-image: url("../../public/IMG_7381.jpg");
-}
+
+} */
 .text {
   font-family: 'Comic Sans MS';
   font-size: 80px;
@@ -51,6 +54,9 @@
 }
 
 @media (max-width:768px){
+  .background {
+    margin-top: 100vh;
+  }
   .backgroundWrapper::before{
     min-height: 100vh;
     width: 100%;

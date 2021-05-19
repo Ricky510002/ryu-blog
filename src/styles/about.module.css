@@ -172,21 +172,23 @@
 /* スマホサイズ */
 @media (max-width: 480px) {
   .bg1{
-    height: 80vh;
+    height: 30vh;
     width: 100%;
     background-size: cover;
-    background-position: center;
-    background-image: url("../../public/0195697A-3C4E-416C-8D22-D0FA69202259.JPG");
+    /* background-position: center; */
+    /* background-image: url("../../public/0195697A-3C4E-416C-8D22-D0FA69202259.JPG"); */
+    background-color: #393D3F;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .bg2{
-    height: 80vh;
+    height: 30vh;
     width: 100%;
     background-size: cover;
-    background-position: center;
-    background-image: url("../../public/45D29359-D92B-4C8E-9A90-B7A1CCBF8414.JPG");
+    /* background-position: center; */
+    /* background-image: url("../../public/45D29359-D92B-4C8E-9A90-B7A1CCBF8414.JPG"); */
+    background-color: #393D3F;
     display: flex;
     justify-content: center;
     align-items: center;
