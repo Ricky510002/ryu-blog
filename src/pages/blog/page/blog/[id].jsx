@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import styles from "../../../../styles/blog.module.css";
 import Header from "../../../../components/header";
 import Background from "../../../../components/background";
@@ -14,7 +15,11 @@ export default function BlogId({ blog }) {
       </Head>
 
       <div className={styles.nav}>
-        <div className={styles.logo}>LOGO</div>
+        <Link href="/">
+          <div className={styles.logo}>
+            Ryu Blog
+          </div>
+        </Link>
         <Burger />
       </div>
 
