@@ -1,4 +1,4 @@
-// import "../styles/globals.css";
+import "../styles/globals.css";
 // import Router from 'next/router'
 // import * as gtag from '../lib/gtag'
 
