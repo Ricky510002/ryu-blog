@@ -11,13 +11,18 @@ export default function BlogId({ blog }) {
     <>
       <Head>
         <title>{blog.title}</title>
+
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.nav}>
         <Link href="/">
           <div className={styles.logo}>
-            <img src="../../../logo.png" alt="LOGO" className={styles.img}/>
+            <img src="../../../logo.png" alt="LOGO" className={styles.img} />
           </div>
         </Link>
         <Burger />
@@ -31,7 +36,12 @@ export default function BlogId({ blog }) {
       <div className={styles.grid}>
         <div className={styles.card}>
           <h1 className={styles.h1}>{blog.title}</h1>
-          <img src={blog.img.url} alt="" className={styles.thumbnail} />
+          <img src={blog.img.url} alt="thumbnail" className={styles.thumbnail} />
+          <div
+              dangerouslySetInnerHTML={{
+                __html: `${blog.lead}`,
+              }}
+            />
           <div className={styles.tableOfContents}>
             <h3>目次</h3>
             <div
