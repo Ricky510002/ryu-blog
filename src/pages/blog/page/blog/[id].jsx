@@ -48,15 +48,12 @@ export default function BlogId({ blog }) {
             className={styles.body}
           />
           <div className={styles.tableOfContents}>
-            <h3>目次</h3>
+            <h2>目次</h2>
             <div
               dangerouslySetInnerHTML={{
                 __html: `${blog.content}`,
               }}
             />
-          </div>
-          <div className={styles.box}>
-            <h3>{blog.head1}</h3>
           </div>
           <div className={styles.body}>
             <div
