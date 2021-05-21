@@ -35,13 +35,18 @@ export default function BlogId({ blog }) {
       <div className={styles.blog}>Ryu Blog</div>
       <div className={styles.grid}>
         <div className={styles.card}>
-          <h1 className={styles.h1}>{blog.title}</h1>
-          <img src={blog.img.url} alt="thumbnail" className={styles.thumbnail} />
+          <h2 className={styles.h2}>{blog.title}</h2>
+          <img
+            src={blog.thumbnail.url}
+            alt="thumbnail"
+            className={styles.thumbnail}
+          />
           <div
-              dangerouslySetInnerHTML={{
-                __html: `${blog.lead}`,
-              }}
-            />
+            dangerouslySetInnerHTML={{
+              __html: `${blog.lead}`,
+            }}
+            className={styles.body}
+          />
           <div className={styles.tableOfContents}>
             <h3>目次</h3>
             <div
