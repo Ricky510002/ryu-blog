@@ -42,7 +42,7 @@ export default function BlogPageId({ blog, totalCount }) {
                       <div
                         className={styles.card_text_06}
                         dangerouslySetInnerHTML={{
-                          __html: `${blog.body1}`,
+                          __html: `${blog.lead}`,
                         }}
                       />
                     </div>
