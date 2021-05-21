@@ -117,10 +117,9 @@ const Contact = () => {
               </tbody>
             </table>
             <div className={styles.buttonWrapper}>
-
-            <button type="submit" className={styles.button}>
-              送信
-            </button>
+              <button type="submit" className={styles.button}>
+                送信
+              </button>
             </div>
           </form>
         </div>
