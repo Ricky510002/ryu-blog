@@ -37,7 +37,7 @@ export default function BlogId({ blog }) {
         <div className={styles.card}>
           <h2 className={styles.h2}>{blog.title}</h2>
           <img
-            src={blog.thumbnail.url}
+            src={blog.img.url}
             alt="thumbnail"
             className={styles.thumbnail}
           />
