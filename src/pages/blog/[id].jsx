@@ -39,15 +39,16 @@ export default function BlogId({ blog }) {
         <div className={styles.card}>
           <h2 className={styles.h2}>{blog.title}</h2>
           <img
-            src={blog.img.url}
+            src={blog.thumbnail.url}
             alt="thumbnail"
             className={styles.thumbnail}
           />
           <div
-              dangerouslySetInnerHTML={{
-                __html: `${blog.lead}`,
-              }}
-            />
+            dangerouslySetInnerHTML={{
+              __html: `${blog.lead}`,
+            }}
+            className={styles.body}
+          />
           <div className={styles.tableOfContents}>
             <h3>目次</h3>
             <div
@@ -56,6 +57,7 @@ export default function BlogId({ blog }) {
               }}
             />
           </div>
+
           <div className={styles.box}>
             <h3>{blog.head1}</h3>
           </div>
