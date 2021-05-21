@@ -31,7 +31,7 @@ export default function Home({ blog, totalCount }) {
                   <div className={styles.card_06}>
                     <img
                       className={styles.card_img_06}
-                      src={blog.img.url}
+                      src={blog.thumbnail.url}
                       alt="ブログのサムネイル"
                     ></img>
                     <div className={styles.card_content_06}>
