@@ -178,7 +178,7 @@
     display: grid;
     margin: 50px 10px;
     min-height: 100vh;
-    grid-template-columns:1fr;
+    grid-template-columns: 1fr;
   }
   .profile {
     background-color: #fff;
@@ -195,4 +195,5 @@
     cursor: pointer;
     z-index: 10;
   }
+  
 }
