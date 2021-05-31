@@ -41,7 +41,7 @@ export default function about() {
             Vue.js, Vuetify, bootstrap <br />
             データベース：MySQL <br />
             プロジェクト管理：Asana <br />
-            その他技術：Git, Linux, Docker, stripe, Wordpress, Octoparse, GAS
+            その他技術：Git, Linux, firebase,Docker, stripe, Wordpress, Octoparse, GAS
             <br />
             <br />
             [趣味]
@@ -71,7 +71,7 @@ export default function about() {
           />
         </div>
         <div className={styles.cardBook2}>
-          <p>
+          <p className={styles.portfolio_p}>
             BookMatchとは大学で使わなくなった教科書を売りたい人と大学の高い教科書を少しでも安く買いたい人を結びつけるサービスです。
             <br />
             ターゲットを大学生にすることで他のフリマアプリなどと差別化をして大学生に使いやすいサービスとなっております。
@@ -96,6 +96,34 @@ export default function about() {
             [使用技術] <br />
             PHP 7.4, Laravel 6.20.9, Docker, MySQL 5.7, Vue.js, Vuetify,
             Bootstrap, Stripe <br />
+          </p>
+        </div>
+      </div>
+      <div className={styles.containerBook}>
+        <div className={styles.cardBook1}>
+          <h1 className={styles.h1}>Todo List</h1>
+          <img
+            src="/スクリーンショット 2021-05-31 9.55.47-min.jpg"
+            alt="ポートフォリオのサムネイル"
+            className={styles.imgBookMatch}
+          />
+        </div>
+        <div className={styles.cardBook2}>
+          <p className={styles.portfolio_p}>
+            シンプルな機能だけのTodoリストが欲しかったのでGoogleアカウントで一瞬でログインして簡単に使えるめっちゃシンプルなTodoリストを作ってみました！
+            <br />
+            [ 使用技術 ]<br />
+            言語・・・JavaScript
+            <br />
+            ライブラリ・フレームワーク・・・React
+            <br />
+            ログイン・・・firebase認証
+            <br />
+            データベース・・・firestore
+            <br />
+            デプロイ先・・・firebase
+            <br />
+            
           </p>
         </div>
       </div>
