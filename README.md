@@ -1,7 +1,7 @@
 
 ## Ryu-blog
 自分のオリジナルブログです。
-Next.js、React、microCMSを使ってJamstackブログを作ってみました。
+Next.js、React、microCMSを使ってJamstackなブログを作ってみました。
 - [Ryu blog](https://ryu--blog.com) 
 
 
