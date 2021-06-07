@@ -24,7 +24,7 @@ export default function about() {
           <p>
             20歳/埼玉県出身
             <br />
-            東京理科大学 経営学部
+            東京理科大学 2年
             <br />
             <br />
             エンジニアを目指す大学生
