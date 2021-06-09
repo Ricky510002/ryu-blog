@@ -14,7 +14,10 @@ export default function Home({ blog, totalCount }) {
         <Head>
           <title>RyuBlog</title>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="google-site-verification" content="8r3O7TlHF_ipBMBMXslxd5023AY7OSHpEiMxGUyMB3Q" />
+          <meta
+            name="google-site-verification"
+            content="8r3O7TlHF_ipBMBMXslxd5023AY7OSHpEiMxGUyMB3Q"
+          />
         </Head>
 
         <Header />
