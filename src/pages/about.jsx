@@ -41,7 +41,8 @@ export default function about() {
             Vue.js, Vuetify, bootstrap <br />
             データベース：MySQL <br />
             プロジェクト管理：Asana <br />
-            その他技術：Git, Linux, firebase,Docker, stripe, Wordpress, Octoparse, GAS
+            その他技術：Git, Linux, firebase,Docker, stripe, Wordpress,
+            Octoparse, GAS
             <br />
             <br />
             [趣味]
@@ -123,7 +124,6 @@ export default function about() {
             <br />
             デプロイ先・・・firebase
             <br />
-            
           </p>
         </div>
       </div>
