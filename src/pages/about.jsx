@@ -111,7 +111,7 @@ export default function about() {
         </div>
         <div className={styles.cardBook2}>
           <p className={styles.portfolio_p}>
-            シンプルな機能だけのTodoリストが欲しかったのでGoogleアカウントで簡単にログインしてすぐに使えるシンプルなTodoリストを作ってみました！
+            シンプルな機能だけのTodoリストが欲しかったのでGoogleアカウントで簡単にログインしてすぐに使えるTodoリストを作ってみました！
             <br />
             [ 使用技術 ]<br />
             言語・・・JavaScript
