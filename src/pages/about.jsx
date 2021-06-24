@@ -118,7 +118,7 @@ export default function about() {
             <br />
             ライブラリ・フレームワーク・・・React
             <br />
-            ログイン・・・firebase認証
+            ログイン・・・firebase(Auth)
             <br />
             データベース・・・firestore
             <br />
