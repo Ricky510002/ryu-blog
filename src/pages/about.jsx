@@ -37,7 +37,7 @@ export default function about() {
             <br />
             言語：JavaScript,PHP, Python(スクレイピング)
             <br />
-            フレームワーク・ライブラリ等： React, Next.js, Material-UI, Laravel,
+            フレームワーク・ライブラリ等： React, Next.js, Laravel,
             Vue.js, Vuetify, bootstrap <br />
             データベース：MySQL <br />
             プロジェクト管理：Asana <br />
