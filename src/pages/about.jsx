@@ -30,7 +30,7 @@ export default function about() {
             エンジニアを目指す大学生
             <br />
             フロントエンド領域に特に興味があり、現在は主にTypeScript, React,
-            Next.jsを学んでいます。
+            Next.jsを学習しています。
             <br />
             <br />
             [技術経験]
