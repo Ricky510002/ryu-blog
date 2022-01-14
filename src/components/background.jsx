@@ -7,7 +7,6 @@ export default function Background(props){
       <div className={styles.background}>
         <div className={styles.text}>{props.title}</div>
       </div>
-
     </div>
     </>
   );
